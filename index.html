@@ -4,81 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineGames</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
-        <img src="#" alt="Logo">
+        <img class="logo" src="#" alt="Logo">
         <nav>
-            <a href="index.html">Home</a>
-            <p>Menu</p>
-            <a class="dropdown" href="#">Bem avaliados</a>
-            <a class="dropdown" href="#">Mal avaliados</a>
-            <a class="dropdown" href="#">Saiba mais</a>
-            <a href="#">Mais</a>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a>
+                    <ul class="dropdown">
+                        <li><a href="bem_avaliados.html">Bem avaliados</a></li>
+                        <li><a href="#">Mal avaliados</a></li>
+                        <li><a href="#">Saiba mais</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mais</a></li>
+            </ul>
         </nav>
-        <button>
+        <button id="log_in">
             Log in
         </button>
     </header>
+
     <picture>
-        <source media="(max-width: 300px)" srcset="imagens/001/1.jpg">
-        <img src="imagens/top-image.jpg" alt="League of Legends">
+        <source media="(max-width: 300px)" srcset="#">
+        <img id="cover" src="imagens/top-image.jpg" alt="League of Legends">
     </picture>
     <main>
-        <section>
+        <section id="intro">
             <h1>Adaptações de Jogos no Cinema</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iusto ratione iste dolore ipsum sit, fuga nesciunt numquam in officia rerum eos, corrupti reprehenderit dicta velit ut, consectetur ea ipsam?</p>
+            <p>Com uma legião de fãs dedicados aos jogos, a adaptação para o cinema tem o desafio de manter a
+                fidelidade à história original, ao mesmo tempo em que traz uma experiência única e envolvente
+                para o público.
+            </p>
         </section>
         <section>
-            <h2>The Witcher</h2>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tjujvMkqWe4?si=1Lvnx5ZoZJzSwK1W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-
-            <h3>Sinopse</h3>
-            <p>Geralt de Rívia, um mutante caçador de monstros, sai em busca de seu destino em um mundo turbulento, onde as pessoas podem ser mais perversas que as criaturas selvagens.
-            </p>
-            <h3>Informações</h3>
-            <ul>
-                <li>Ano: 2019. </li>
-                <li>Criado por:Lauren Schmidt Hissrich.</li>
-                <li>Temporadas: 3.</li>
-            </ul>
-            <h3>Onde assistir</h3>
-            <button>
-                <a href="https://www.netflix.com/br/title/80189685" target="_blank">Netflix</a>
-            </button>
-
-            <h2>Pokémon: Detetive Pikachu</h2>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ikwHWX-ZWnc?si=tgiFEykQ7BwvSCLO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <h3>Sinopse</h3>
-            <p>
-                O desaparecimento do detetive Harry Goodman faz com que seu filho Tim (Justice Smith) parta à sua procura. Ao seu lado ele conta com Pikachu, o antigo parceiro Pokémon de seu pai, que perdeu a memória recentemente. Juntos, eles percorrem as ruas da metrópole de Ryme City, onde humanos e Pokémon vivem em harmonia... por enquanto.
-            </p>
-            <h3>Informações</h3>
-            <ul>
-                <li>Ano: 2019. </li>
-                <li>Criado por: Rob Letterman.</li>
-                <li>Duração: 1h 45min.</li>
-            </ul>
-            <h3>Onde assistir</h3>
-            <button>
-                <a href="https://www.primevideo.com/detail/amzn1.dv.gti.d4b8aa91-208d-b878-6fe9-6d9028d7fca2?tag=adorocinemabrasil-bouton-20" target="_blank">Prime Video</a>
-            </button>
-            <button>
-                <a href="https://www.max.com/br/pt/movies/pokemon-detetive-pikachu/3b4fec41-1037-438a-b40d-afe0e5731e9c" target="_blank">Max</a>
-            </button>
+            
         </section>
     </main>
     <hr>
-    <h4>Veja mais</h4>
-    <a href="#">link 01</a><br>
-    <a href="#">link 02</a>
+    <aside>
+        <h4>Veja mais</h4>
+        <a href="#">link 01</a><br>
+        <a href="#">link 02</a>
+    </aside>
     <footer>
-        <img src="#" alt="Logo">
+        <img id="logo_footer" src="imagens/full_logo.png" alt="Logo">
         <p>Criado por:</p>
         <button>
             <img src="#" alt="redes sociais">
@@ -90,5 +63,7 @@
             <img src="#" alt="redes sociais">
         </button>
     </footer>
+
+    <script src="/scripts/script.js"></script>
 </body>
 </html>
