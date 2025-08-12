@@ -176,4 +176,10 @@ footer {
 #logo_footer {
     width: 150px;
 }
+div#container {
+    min-height: 800px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
 
